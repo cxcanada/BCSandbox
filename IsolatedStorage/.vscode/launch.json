@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "XChen BC24.2",
+            "server": "https://xchen.eastus.cloudapp.azure.com",
+            "port": 7049,
+            "serverInstance": "BC",
+            "tenant": "default",
+            "authentication": "UserPassword",
+            "breakOnError": true,
+            "startupObjectId": 23044601,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "XChen BC25.2",
+            "server": "https://iwxchenbc24.eastus.cloudapp.azure.com",
+            "port": 7049,
+            "serverInstance": "BC",
+            "tenant": "default",
+            "authentication": "UserPassword",
+            "breakOnError": true,
+            "startupObjectId": 23044601,
+            "schemaUpdateMode": "ForceSync"
+        },
+        {
+            "name": "Attach: XC",
+            "type": "al",
+            "request": "attach",
+            "environmentType": "OnPrem",
+            "server": "https://xchen.eastus.cloudapp.azure.com",
+            "serverInstance": "BC",
+            "authentication": "UserPassword",
+            "breakOnError": "All",
+            "breakOnRecordWrite": "None",
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebServiceClient",
+            "tenant": "default",
+        }
+    ]
+}
