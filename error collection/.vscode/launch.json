@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "XChen Dev",
+            "server": "https://xchen.eastus.cloudapp.azure.com",
+            "port": 7049,
+            "serverInstance": "BC",
+            "tenant": "default",
+            "authentication": "UserPassword",
+            "breakOnError": true,
+            "startupObjectId": 22,
+            "schemaUpdateMode": "ForceSync"
+        }
+    ]
+}
