@@ -1,0 +1,14 @@
+**/.vscode/**
+!**/.vscode/launch.json
+!**/.vscode/settings.json
+!**/.vscode/*ruleset.json
+# Ensure we track pipieline files
+!**/.pipeline/**
+# We do not commit app files, they are noise.
+**/*.app
+**/*.fob
+**/*.log
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
